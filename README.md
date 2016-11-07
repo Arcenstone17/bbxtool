@@ -14,7 +14,7 @@ python -m pip install sqlalchemy
 instal PyQt4 (i used for puthon 3.4 version)
 __________________________________________________
 
-#python -m pip install pygame
+
 
 _________________________________
 for bbggui.exe run: 
