@@ -9,6 +9,7 @@ import random
 
 TRAIN_FILE = os.path.join('resources', 'exercise', 'exercise.json')
 
+
 class Exercise():
     """Class generate obj which means to return random exercise from json file"""
     def __init__(self, list):
@@ -51,51 +52,49 @@ class Exercise():
         return random.choice(self._exercise)
 
 
-
-
 if __name__ == '__main__':
 
     #Filling json file or creating it with default data
 
     exer1 = ['title1',\
     '''
-    Найти упражнение1
+    Случайное упражнение1
     ''']
     exer2 = ['title2',\
     '''
-    Найти упражнение2
+    Случайное упражнение2
     ''']
     exer3 = ['title3',\
     '''
-    Найти упражнение3
+    Случайное упражнение3
     ''']
     exer4 = ['title4',\
     '''
-    Найти упражнение4
+    Случайное упражнение4
     ''']
     exer5 = ['title5',\
     '''
-    Найти упражнение5
+    Случайное упражнение5
     ''']
     exer6 = ['title6',\
     '''
-    Найти упражнение6
+    Случайное упражнение6
     ''']
     exer7 = ['title7',\
     '''
-    Найти упражнение7
+    Случайное упражнение7
     ''']
     exer8 = ['title8',\
     '''
-    Найти упражнение8
+    Случайное упражнение8
     ''']
     exer9 = ['title9',\
     '''
-    Найти упражнение9
+    Случайное упражнение9
     ''']
     exer10 = ['title10',\
     '''
-    Найти упражнение10
+    Случайное упражнение10
     ''']
 
     data = [exer1, exer2, exer3, exer4, exer5, exer6, exer7, exer8, exer9, exer10]

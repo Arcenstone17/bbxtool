@@ -316,7 +316,7 @@ class BeatsSubWindow(QtGui.QMdiSubWindow):
         # customize windows hint button
         self.setWindowFlags(QtCore.Qt.WindowTitleHint)
 
-        self.actionButton = QtGui.QPushButton('Pictture \nbetter ?', self)
+        self.actionButton = QtGui.QPushButton('X', self)
         self.actionButton.setGeometry(QtCore.QRect(200, 230, 61, 61))
         font = QtGui.QFont()
         font.setPointSize(11)
@@ -434,7 +434,7 @@ class SoundsSubWindow(QtGui.QMdiSubWindow):
         # customize windows hint button
         self.setWindowFlags(QtCore.Qt.WindowTitleHint)
 
-        self.actionButton = QtGui.QPushButton('Pictture \nbetter ?', self)
+        self.actionButton = QtGui.QPushButton('X', self)
         self.actionButton.setGeometry(QtCore.QRect(200, 250, 61, 61))
         font = QtGui.QFont()
         font.setPointSize(11)
@@ -442,6 +442,7 @@ class SoundsSubWindow(QtGui.QMdiSubWindow):
         self.actionButton.clicked.connect(lambda: self.close())
 
         self.show()
+
 
     def closeEvent(self, QCloseEvent):
         '''enable all elements of parent'''
@@ -487,7 +488,7 @@ class ExerciseSubWindow(QtGui.QMdiSubWindow):
         # customize windows hint button
         self.setWindowFlags(QtCore.Qt.WindowTitleHint)
 
-        self.actionButton = QtGui.QPushButton('Pictture \nbetter ?', self)
+        self.actionButton = QtGui.QPushButton('X', self)
         self.actionButton.setGeometry(QtCore.QRect(200, 230, 61, 61))
         font = QtGui.QFont()
         font.setPointSize(11)
@@ -504,22 +505,20 @@ class ExerciseSubWindow(QtGui.QMdiSubWindow):
             i.setDisabled(False)
 
 
-# Find some way to avoid this?
+# golbal state switchers
 def switch_change_state():
     global change_state
     change_state = not change_state
+
 
 def switch_metro_state():
     global metro_state
     metro_state = not metro_state
 
+
 def switch_url_state():
     global url_state
     url_state = not url_state
-
-
-
-
 
 
 
@@ -533,7 +532,7 @@ if __name__ == '__main__':
 
     bbxForm = Window()
 
-    # is it right way ?
+    # initialize Database
     bbdb.init_db()
 
     sys.exit(app.exec_())
